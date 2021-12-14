@@ -19,10 +19,11 @@ public class User implements Serializable {
 
     @Column(name="email", nullable=false, length=50, unique=true)
     private String email;
-    @Column(name="name", nullable=false, length=80)
-    private String name;
     @Column(name="password", nullable=false, length=80)
     private String password;
+    @Column(name="name", nullable=false, length=80)
+    private String name;
+
 /**
     public User(Integer id, String email, String name, String password){
         this.id = id;
